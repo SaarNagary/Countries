@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.myfirebaseapphit.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_logingFragment"
+            app:destination="@id/logingFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_regFragment"
+            app:destination="@id/regFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logingFragment"
+        android:name="com.example.myfirebaseapphit.fragments.LogingFragment"
+        android:label="fragment_loging"
+        tools:layout="@layout/fragment_loging" >
+        <action
+            android:id="@+id/action_logingFragment_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/regFragment"
+        android:name="com.example.myfirebaseapphit.fragments.RegFragment"
+        android:label="fragment_reg"
+        tools:layout="@layout/fragment_reg" >
+        <action
+            android:id="@+id/action_regFragment_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.myfirebaseapphit.activities.MainActivity2"
+        android:label="activity_main2"
+        tools:layout="@layout/activity_main2" />
+</navigation>

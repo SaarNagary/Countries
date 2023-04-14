@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".fragments.MainFragment" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center">
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/designcard"
+    android:orientation="vertical">
+        <Button
+            android:id="@+id/buttonLoginMainPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_design"
+            android:layout_margin="20dp"
+            android:text="Login Page" />
+
+        <Button
+            android:id="@+id/buttonRegisterMainPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_design"
+            android:layout_margin="20dp"
+            android:text="Register Page" />
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
